@@ -1,5 +1,6 @@
 html,
 body,
+div,
 h1,
 p,
 form,
@@ -10,38 +11,82 @@ label {
   font-size: 1rem;
   font-family: Roboto, sans-serif;
   vertical-align: baseline;
+  color: #331c00;
 }
 
 body {
-  line-height: 1.25;
   background-image: linear-gradient(
       to right bottom,
-      rgba(228, 98, 27, 0.5),
-      rgba(114, 49, 13, 0.5)
+      rgba(251, 140, 0, 0.75),
+      rgba(238, 93, 41, 0.75)
     ),
     url(./travel.jpg);
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-main {
-  background-color: #fae0d1;
-  margin: 5% 15%;
-  border-radius: 5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  padding: 5rem;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 5rem;
 }
 
-p {
-  margin: 1rem 0 1.5rem 0;
+p,
+label {
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+form {
+  background-color: rgba(255, 232, 204, 0.75);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0 5rem 0;
 }
 
 textarea {
   font-family: inherit;
+  height: 10rem;
+  width: 35rem;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 0.5rem;
+}
+
+button {
+  font-size: inherit;
+  background-color: #ee5d29;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+#description {
+  font-style: italic;
 }
