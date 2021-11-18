@@ -1,0 +1,47 @@
+html,
+body,
+h1,
+p,
+form,
+label {
+  margin: 0.25rem 0;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  font-family: Roboto, sans-serif;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1.25;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(228, 98, 27, 0.5),
+      rgba(114, 49, 13, 0.5)
+    ),
+    url(./travel.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  background-color: #fae0d1;
+  margin: 5% 15%;
+  border-radius: 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  margin: 1rem 0 1.5rem 0;
+}
+
+textarea {
+  font-family: inherit;
+}

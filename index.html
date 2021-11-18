@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Travel Survey Form</title>
+</head>
+    <body>
+        <main>
+            <h1 id="title">Travel Survey Form</h1>
+            <p id="description">This is a survey form to understand people's travel preferences.</p>
+            <form id="survey-form">
+                <label for="name" id="name-label">Your name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+
+                <label for="email" id="email-label">Your email</label>
+                <input type="email" id="email" placeholder="johndoe@example.com" required>
+
+                <label for="number" id="number-label">How many different countries have you been to?</label>
+                <input type="number" id="number" min="1" max="20" placeholder="1-20">
+
+                <label for="dropdown">How do you usually travel to your destination?</label>
+                <select id="dropdown">
+                    <option>-- Please select an option --</option>
+                    <option>Plane</option>
+                    <option>Car</option>
+                    <option>Train</option>
+                    <option>Coach</option>
+                    <option>Ship</option>
+                    <option>Other</option>
+                </select>
+
+                <p>What is your favourite continent?</p>
+                <input type="radio" name="continent" value="europe" id="europe">
+                <label for="europe">Europe</label>
+                <input type="radio" name="continent" value="africa" id="africa">
+                <label for="africa">Africa</label>
+                <input type="radio" name="continent" value="north-america" id="north-america">
+                <label for="north-america">North America</label>
+                <input type="radio" name="continent" value="south-america" id="south-america">
+                <label for="south-america">South America</label>
+                <input type="radio" name="continent" value="asia" id="asia">
+                <label for="asia">Asia</label>
+                <input type="radio" name="continent" value="oceania" id="oceania">
+                <label for="oceania">Oceania</label>
+                <input type="radio" name="continent" value="antarctica" id="antarctica">
+                <label for="antarctica">Antarctica</label>
+
+                <p>What activities do you like to do on holiday?</p>
+                <input type="checkbox" value="relax">
+                <label for="relax">Relax</label>
+                <input type="checkbox" value="adventure">
+                <label for="adventure">Go on a adventure</label>
+                <input type="checkbox" value="sightsee">
+                <label for="sightsee">Sightseeing</label>
+                <input type="checkbox" value="shopping">
+                <label for="shopping">Shopping</label>
+                <input type="checkbox" value="meet">
+                <label for="meet">Meet new people</label>
+                <input type="checkbox" value="new">
+                <label for="new">Try new things</label>
+                <input type="checkbox" value="other">
+                <label for="other">Something else</label>
+
+                <label for="comments">Is there anything else you'd like to add?</label>
+                <textarea id="comments">Please leave additional comments here...</textarea>
+                <button id="submit">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>
